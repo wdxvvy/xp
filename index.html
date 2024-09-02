@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdxvvy</title>
+    <!-- Temel stil dosyasını ekleyin -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <!-- İçerik Alanı -->
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">wdxvvy's website'</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <h2>About me</h2>
+                <p>Welcome to my personal website.
+Let me introduce myself
+I'm Yigit, I live in Turkey 
+I love coding and designing
+I am now dealing with e-commerce and I aim to establish my own company in the future.</p>
+                <h2>Contact me</h2>
+                <p>You can contact me from these emails. contact@wdxvvy.com.tr or contact@wdxvvy.xyz</a></p>
+            </div>
+        </div>
+        <!-- Görev Çubuğu -->
+        <div class="taskbar">
+            <div class="start-menu">
+                <button id="startButton">Start</button>
+            </div>
+            <div class="taskbar-icons">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+            const socialMediaLinks = `
+                <div style="
+                    position: fixed; 
+                    top: 20%; 
+                    left: 20%; 
+                    width: 60%; 
+                    background: #F0F0F0; 
+                    border: 2px solid #000080; 
+                    padding: 20px; 
+                    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); 
+                    z-index: 9999; 
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+                    <h2>My social media accounts</h2>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><a href="https://www.instagram.com/yiggittcann" target="_blank">Instagram</a></li>
+                        <li><a href="https://github.com/wdxvvy" target="_blank">Github</a></li>
+                        <li><a href="https://t.me/wdxvvy" target="_blank">Telegram</a></li>
+                    </ul>
+                    <button onclick="this.parentElement.style.display='none';" style="
+                        background-color: #C0C0C0; 
+                        border: none; 
+                        padding: 5px 10px; 
+                        cursor: pointer;">close</button>
+                </div>
+            `;
+            const newWindow = document.createElement('div');
+            newWindow.innerHTML = socialMediaLinks;
+            document.body.appendChild(newWindow);
+        });
+    </script>
+</body>
+</html>
+

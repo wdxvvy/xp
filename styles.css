@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* Arka Plan */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Masaüstü */
+.desktop {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Pencere Stili */
+.window {
+    width: 300px;
+    border: 2px solid #000080;
+    background-color: #C0C0C0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.title-bar {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-controls button {
+    width: 16px;
+    height: 16px;
+    background-color: #C0C0C0;
+    border: none;
+    margin: 0 2px;
+}
+
+.window-body {
+    padding: 10px;
+}
+
+/* Görev Çubuğu */
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000080;
+    color: #ffffff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.start-menu button {
+    background-color: #C0C0C0;
+    border: none;
+    color: #000080;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.taskbar-icons span {
+    margin: 0 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
